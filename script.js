@@ -64,10 +64,10 @@ let engine = Matter.Engine.create();
         
         ///
         Matter.World.add(engine.world,[boxA,boxB,mouseConstraint,
-            Matter.Bodies.rectangle(400, 0, 800, 01, { isStatic: true }),
-            Matter.Bodies.rectangle(400, 600, 800, 01, { isStatic: true }),
-            Matter.Bodies.rectangle(800, 300, 1, 600, { isStatic: true }),
-            Matter.Bodies.rectangle(0, 300, 01, 600, { isStatic: true })]);
+            Matter.Bodies.rectangle(400, 0, 800, 01, { isStatic: true ,  render: {visible: false} }),
+            Matter.Bodies.rectangle(400, 600, 800, 01, { isStatic: true,  render: {visible: false} }),
+            Matter.Bodies.rectangle(800, 300, 1, 600, { isStatic: true,  render: {visible: false} }),
+            Matter.Bodies.rectangle(0, 300, 01, 600, { isStatic: true,  render: {visible: false} })]);
         Matter.Engine.run(engine);
         Matter.Render.run(render);
         console.log(render.canvas.parentNode)

@@ -6,11 +6,8 @@ body {
     margin: 0;
     background-color: #F4FCD9;
 }
-canvas {
-    
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
+div {
+    height: 1000px;
 }
 
 
