@@ -4,10 +4,21 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background-color: #F4FCD9;
+    background-color: #C5D8A4;
 }
 div {
     height: 1000px;
 }
-
-
+span > div {
+    font-family: "Karla", 'ATC Arquette 1_5_17', sans-serif;
+    letter-spacing: -0.02em;
+    height: fit-content;
+    text-align:center;
+    bottom: 10px;
+    padding-top: 100px;
+}
+/*F4FCD9
+C5D8A4
+BB9981
+534340
+*/
