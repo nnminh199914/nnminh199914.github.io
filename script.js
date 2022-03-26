@@ -4,8 +4,8 @@ let engine = Matter.Engine.create();
             element: document.body.firstElementChild,
             engine:engine ,
             options: {
-                width: innerWidth,
-                height: innerHeight,
+                width: 800,
+                height: 600,
                 wireframes: false,
                 background: "#C5D8A4"
             }
@@ -63,7 +63,10 @@ let engine = Matter.Engine.create();
         
         
         ///
-        Matter.World.add(engine.world,[boxA,boxB,mouseConstraint]);
+        Matter.World.add(engine.world,[boxA,boxB,mouseConstraint,Bodies.rectangle(400, 0, 800, 50, { isStatic: true }),
+            Bodies.rectangle(400, 600, 800, 50, { isStatic: true }),
+            Bodies.rectangle(800, 300, 50, 600, { isStatic: true }),
+            Bodies.rectangle(0, 300, 50, 600, { isStatic: true })]);
         Matter.Engine.run(engine);
         Matter.Render.run(render);
         console.log(render.canvas.parentNode)
