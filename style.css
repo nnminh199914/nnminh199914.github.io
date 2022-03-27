@@ -9,7 +9,7 @@ body {
 div {
     height: 1000px;
 }
-span > div {
+span > h1 {
     font-family: "Karla", 'ATC Arquette 1_5_17', sans-serif;
     letter-spacing: -0.02em;
     height: fit-content;
