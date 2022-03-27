@@ -22,9 +22,7 @@ div{
     width: 1vw;
   }
   
-  body::-webkit-scrollbar-track {
-    background: #333338;
-  }
+  
   
   body::-webkit-scrollbar-thumb {
     background: #BB9981;
@@ -39,7 +37,6 @@ div{
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 600ms ease;
-    overflow: scroll;
   }
   
   .navbar-nav {
