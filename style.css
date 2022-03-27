@@ -23,11 +23,11 @@ div{
   }
   
   body::-webkit-scrollbar-track {
-    background: #1e1e24;
+    background: #333338;
   }
   
   body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: #BB9981;
   }
   
   main {
