@@ -19,13 +19,13 @@ div{
   }
   
   body::-webkit-scrollbar {
-    width: 1vw;
+    width: 0.5vw;
   }
   
   
   
   body::-webkit-scrollbar-thumb {
-    background: #BB9981;
+    background: #534340;
   }
   
   main {
