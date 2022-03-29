@@ -1,3 +1,10 @@
+#avatar{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  margin-left: 5rem;
+  margin-top: 52vh;
+}
 #backgrounD{
   display: flex;
   height: 100vh;
