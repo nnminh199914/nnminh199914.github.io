@@ -7,7 +7,7 @@ let engine = Matter.Engine.create();
                 width: 800,
                 height: 600,
                 wireframes: false,
-                background: "#C5D8A4"
+                background: "#415A77"
             }
         });
         ////
@@ -24,7 +24,7 @@ let engine = Matter.Engine.create();
         //let ground = Matter.Bodies.rectangle(400,600,1000,60,{ isStatic: true}); 
         let boxA = Matter.Bodies.rectangle(400,200,80,80,{
             render: {
-                fillStyle: "#534340"
+                fillStyle: "#1B263B"
             }
         });
         let boxB = Matter.Bodies.rectangle(450,50,230,70,{
