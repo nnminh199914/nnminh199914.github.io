@@ -1,3 +1,33 @@
+.link{
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  top: 2vh;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  font-size: calc(1vw + 2px);
+}
+#link-cv {
+  color: #778DA9;
+  text-decoration: none;
+  border: 1px solid #0D1B2A;
+  background-color: #E0E1DD;
+  border-radius: 90px;
+  padding: 0.3em 1em;
+  margin-left: 4vw;
+  transition: all 2s;
+  font-family: "Karla", 'ATC Arquette 1_5_17', sans-serif;
+  font-weight: 500;
+}
+.link-cv-click-on-it{
+  opacity: 0;
+  transition: 0.5s;
+}
+.link-cv:hover + .link-cv-click-on-it{
+  opacity: 0.5;
+}
+
 #avatar{
   position: absolute;
   height: 300px;
@@ -94,7 +124,9 @@ svg{
     background-color: var(--bg-primary);
     transition: width 600ms ease;
   }
-  
+  html{
+    scroll-behavior: smooth;
+  }
   .navbar-nav {
     list-style: none;
     padding: 0;

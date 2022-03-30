@@ -1,7 +1,7 @@
 
 let engine = Matter.Engine.create();
         let render = Matter.Render.create({
-            element: document.getElementById("home"),
+            element: document.getElementById("about"),
             engine:engine ,
             options: {
                 width: 800,
