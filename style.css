@@ -238,6 +238,12 @@ svg{
     }
   }
 
+  #work{
+    display: flex;
+    justify-content: center;
+    margin-top: 80vh;
+  }
+
 /*F4FCD9
 C5D8A4
 BB9981
