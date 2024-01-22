@@ -1,19 +1,18 @@
 import React from 'react';
 import { Button, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'; // Replace with your desired icon
 
-
+// Styled Container
 const CenteredBox = styled(Box)({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  boxShadow: '0px 6px 15px #0000ff61',
   width: '300px', // Fixed width
   height: '100px', // Fixed height
   overflow: 'hidden',
 });
 
+// Styled Button
 const GradientButton = styled(Button)({
   fontFamily: 'Hack, monospace',
   color: '#ffffff',
@@ -25,7 +24,6 @@ const GradientButton = styled(Button)({
   borderRadius: '50px',
   position: 'relative',
   overflow: 'hidden',
-  boxShadow: '0px 6px 15px #0000ff61',
   
   '& .something': {
     position: 'absolute',
@@ -35,7 +33,6 @@ const GradientButton = styled(Button)({
   },
 
   '&:hover': {
-    boxShadow: '0px 6px 15px #0000ff61',
     padding: '1.5rem 10.5rem 1.5rem 1.5rem',
 
     '& .something': {
@@ -45,12 +42,12 @@ const GradientButton = styled(Button)({
   },
 });
 
-export const App = () => {
+// Reusable Component
+export const CustomButton = ({ children }) => {
   return (
     <CenteredBox>
       <GradientButton>
-        <span className="something">Hover</span>
-        <ArrowForwardIosIcon /> {/* Replace with your desired icon */}
+        {children}
       </GradientButton>
     </CenteredBox>
   );
